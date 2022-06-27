@@ -52,12 +52,7 @@ export default {
                         class="capitalize p-4 rounded-lg bg-opaque"
                         v-if="anime.anime_id !== 4"
                     >
-                        <router-link
-                            :to="{
-                                name: 'AnimeDetail',
-                                params: { anime_name: anime.anime_name },
-                            }"
-                        >
+                        <router-link :to="anime.anime_name">
                             <img
                                 :src="anime.anime_img"
                                 alt=""

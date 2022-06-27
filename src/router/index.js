@@ -4,9 +4,9 @@ import AnimeDetail from '../components/AnimeDetail.vue';
 import NotFound from '../components/NotFound.vue';
 
 const routes = [
-    { path: '/', name: 'ListAnime', component: ListAnime },
-    { path: '/:anime_name', name: 'AnimeDetail', component: AnimeDetail },
-    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
+    { path: '/', component: ListAnime },
+    { path: '/:anime_name', component: AnimeDetail },
+    { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 
 const router = createRouter({
